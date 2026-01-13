@@ -27,7 +27,7 @@ body {
     line-height: 1.6;
 }
 
-/* ================= NAV ================= */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -64,13 +64,13 @@ nav a:hover {
     color: white;
 }
 
-/* ================= CONTAINER ================= */
+
 .container {
     max-width: 1100px;
     margin: auto;
 }
 
-/* ================= HOME ================= */
+
 .home {
     display: grid;
     grid-template-columns: 260px 1fr;
@@ -79,14 +79,14 @@ nav a:hover {
     align-items: start;
 }
 
-/* PROFILE */
+
 .profile img {
     width: 100%;
     border-radius: 18px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
-/* INTRO */
+
 .intro h1 {
     font-size: 40px;
     margin-bottom: 6px;
@@ -117,7 +117,7 @@ nav a:hover {
     font-weight: 500;
 }
 
-/* ================= SECTIONS ================= */
+
 .section {
     padding: 70px 40px;
 }
@@ -129,7 +129,7 @@ nav a:hover {
     padding-left: 14px;
 }
 
-/* ================= PROJECTS ================= */
+
 #projects {
     background: linear-gradient(
         to bottom,
@@ -160,7 +160,7 @@ nav a:hover {
     color: var(--muted);
 }
 
-/* ================= CONTACT ================= */
+
 #contact p {
     margin-bottom: 10px;
 }
@@ -171,7 +171,7 @@ nav a:hover {
     font-weight: 500;
 }
 
-/* ================= FOOTER ================= */
+
 footer {
     text-align: center;
     padding: 24px;
@@ -180,7 +180,7 @@ footer {
     font-size: 14px;
 }
 
-/* ================= MOBILE ================= */
+
 @media (max-width: 900px) {
     .home {
         grid-template-columns: 1fr;
@@ -234,6 +234,47 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-btn i {
+    font-size: 18px;
+}
+
+
+.social-btn.facebook { background: #1877f2; }
+.social-btn.instagram { background: #e1306c; }
+.social-btn.github { background: #333; }
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center; 
 }
 
 
