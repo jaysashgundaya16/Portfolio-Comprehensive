@@ -2,51 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Jaysash Gundaya | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1 id="name">Your Name</h1>
-        <p>Web Developer | Student</p>
-        <button onclick="changeText()">Click Me</button>
-    </header>
+<!-- NAVBAR -->
+<nav>
+    <h2 class="logo">JG</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="dark-btn" onclick="app.toggleDark()">🌙</button>
+</nav>
 
-    <!-- ABOUT -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a expert programmer learning HTML, CSS, and JavaScript.
-            I want to build systems and applications.
-        </p>
-    </section>
+<!-- HOME -->
+<section id="home" class="home container">
+    <div class="profile">
+        <img src="pictures/pp.jpg" alt="Profile Picture">
+    </div>
 
-    <!-- SKILLS -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
+    <div class="intro">
+        <h1>Hi, I'm <span id="typing-name"></span></h1>
+        <p id="role"></p>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Simple Portfolio Website</p>
+        <div class="about">
+            <h3>About Me</h3>
+            <p>
+                I'm <b>Jaysash Gundaya</b>, an aspiring software developer interested in
+                web development, Java systems, and IoT projects.
+            </p>
         </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Your Name</p>
-    </footer>
+        <div class="skills">
+            <h3>Skills</h3>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Java</span>
+            <span>IoT / ESP32</span>
+        </div>
+    </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- PROJECTS -->
+<section id="projects" class="section container">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="pictures/project1.png" alt="Portfolio Website">
+            <h3>Municipal Agriculture office</h3>
+            <p>Information System</p>
+        </div>
+
+        <div class="project-card">
+            <img src="pictures/project2.jpg" alt="Console System">
+            <h3>NPK Sensing Device</h3>
+            <p>Internet of Things (IOT)</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section container">
+    <h2>Contact</h2>
+
+    <p>Email: <a href="mailto:jaysashgundaya@gmail.com">jaysashgundaya@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/jaysashgundaya16" target="_blank">
+        github.com/jaysashgundaya16</a></p>
+</section>
+
+<footer>
+    <p>© 2026 Jaysash Gundaya</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
